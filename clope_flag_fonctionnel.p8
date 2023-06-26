@@ -12,6 +12,7 @@ function _update()
 player_movement()
 update_camera()
 //can_move()
+player.y+=gravity
 
 end
 
@@ -52,6 +53,8 @@ function create_player()
 		sprite=1,
 		speed=1	
  }
+ gravity=0.3
+ friction=0.85
 end
 
 function draw_player()
@@ -100,6 +103,10 @@ end
 
 
 			
+
+-->8
+--collision
+//function collide_map(obj,aim,flag)
 
 __gfx__
 00000000000000600000000600000000111111111111111111111111111111110000000000000000000006600000000011111111111111110000000000000000
